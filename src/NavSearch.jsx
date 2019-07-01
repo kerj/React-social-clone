@@ -3,7 +3,7 @@ import React from 'react';
 function NavSearch(){
     return(
         <div>
-            <input placeholder="Search" type="text"/>
+            <input className="navSearch"placeholder="Search" type="text"/>
         </div>
     );
 }
