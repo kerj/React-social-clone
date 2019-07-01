@@ -9,6 +9,12 @@ const styles = makeStyles({
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
+    },
+    bigFlex: {
+        flexGrow: '3'
+    },
+    smallFlex: {
+        flexGrow: '1'
     }
 })
 
@@ -16,9 +22,16 @@ function ContentWindow(){
     const classes = styles();
     return(
         <div className={classes.mainWindow}>
-            <Profile/>
-            <NewsFeed/>
-            <Trending/>
+            <div className={classes.smallFlex}>
+                <Profile/>
+            </div>
+            <div className={classes.bigFlex}>
+                <NewsFeed/>
+            </div>
+            <div className={classes.smallFlex}>
+                <Trending/>
+            </div>
+            
         </div>
     );
 }
