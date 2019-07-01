@@ -2,7 +2,7 @@ import React from 'react';
 
 function Trending(){
     return(
-        <div>
+        <div className="yellow">
             <img src="" alt="article thumbnail"/>
             <button><a href="#">Go To Article</a></button>
         </div>

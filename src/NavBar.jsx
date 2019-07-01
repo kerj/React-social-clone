@@ -19,18 +19,9 @@ function NavBar(props) {
     children: PropTypes.node.isRequired,
   };
   
-  const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-      backgroundColor: theme.palette.background.paper
-    },
-    NavSearch : {
 
-    }
-  }));
   
   export default function SimpleTabs() {
-    const classes = useStyles();
     const [value, setValue] = React.useState(0);
   
     function handleChange(event, newValue) {
@@ -38,8 +29,7 @@ function NavBar(props) {
     }
 
     return(
-        // <div className="{classes.root}">
-        <div class="root">
+        <div class="nav">
         <AppBar position="static" className="fb-row">
             <Tabs value={value} onChange={handleChange}>
                 <Tab label="Home"/><a href="#"></a>
@@ -47,7 +37,7 @@ function NavBar(props) {
                 <Tab label="Messages"/><a href="#"></a>
             </Tabs>
             <NavSearch/>
-            <button className="navButton">Tweet</button>
+            <button>Tweet</button>
 
         </AppBar>
         </div>

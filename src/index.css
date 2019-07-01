@@ -25,3 +25,14 @@ code {
 .navSearch {
   margin-top: 14px;
 }
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+ display: flex;
+ flex-direction: column;
+}
+
